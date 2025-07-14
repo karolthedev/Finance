@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accounts - Personal Finance App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Accounts</h1>
+
+  <form id="accountForm">
+    <label>
+      User:
+      <select id="userSelect" required></select>
+    </label><br />
+    <input type="text" id="accountName" placeholder="Account Name" required />
+    <select id="accountType" required>
+      <option value="">Select Type</option>
+      <option value="bank">Bank</option>
+      <option value="cash">Cash</option>
+      <option value="credit">Credit</option>
+    </select>
+    <input type="text" id="currency" placeholder="Currency (e.g., CAD)" value="CAD" required />
+    <button type="submit">Add Account</button>
+  </form>
+
+  <h2>All Accounts</h2>
+  <ul id="accountList"></ul>
+
+  <script src="./accounts.js"></script>
+</body>
+</html>
